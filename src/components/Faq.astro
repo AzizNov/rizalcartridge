@@ -1,0 +1,45 @@
+---
+const faqs = [
+  {
+    id: 1,
+    question: "Apa itu RizalCartridge?",
+    answer: "RizalCartridge menjual tinta baru & bekas berkualitas tinggi dengan harga bersahabat."
+  },
+  {
+    id: 2,
+    question: "Apakah melayani pengiriman ke luar kota?",
+    answer: "Ya, kami melayani pengiriman ke seluruh Indonesia."
+  },
+  {
+    id: 3,
+    question: "Bagaimana cara memesan produk?",
+    answer: "Anda bisa memesan langsung melalui website kami atau menghubungi kami lewat WhatsApp untuk pembelian dan konsultasi produk."
+  },
+  {
+    id: 5,
+    question: "Bagaimana cara mengetahui tipe cartridge yang cocok untuk printer saya?",
+    answer: "Anda bisa cek tipe cartridge di label printer atau buku panduan, atau langsung konsultasikan dengan kami melalui WhatsApp agar kami bantu mencarikan yang cocok."
+  },
+]
+---
+
+<div>
+  <h1 class="text-center font-semibold text-xl md:text-2xl">Pertanyaan Yang Sering Diajukan</h1>
+  <p class="text-center text-md md:text-xl text-gray-700">Pelajari lebih lanjut tentang kami</p>
+
+  <!-- accordion -->
+  <div class="w-full max-w-xl mx-auto my-4">
+  <div class="border-gray-600 rounded-lg overflow-hidden shadow mx-4">
+    {faqs.map(faq => (
+      <details class="group border-t border-t-gray-200">
+        <summary class="cursor-pointer text-gray-800 px-4 py-3 font-semibold transition">
+          {faq.question}
+        </summary>
+        <div class="px-4 py-3 bg-white text-gray-800">
+          {faq.answer}
+        </div>
+      </details>
+    ))}
+  </div>
+</div>
+</div>
