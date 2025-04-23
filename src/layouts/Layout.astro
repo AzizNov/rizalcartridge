@@ -11,6 +11,14 @@ import "../styles/global.css"
 		<title>Rizal Cartridge</title>
 	</head>
 	<body class="font-poppins">
-		<slot />
+		<header class="bg-primary fixed left-0 right-0 top-0 z-1">
+			<slot name="header"/>
+		</header>
+		<main id="beranda">
+			<slot />
+		</main>
+		<footer class="bg-primary">
+			<slot name="footer" />
+		</footer>
 	</body>
 </html>
