@@ -2,13 +2,14 @@
 import Image from "astro/components/Image.astro"
 ---
 
-<div class="bg-primary text-white flex flex-col justify-center items-center p-16 pt-40">
-  <h2 class="text-4xl font-bold">Beli atau Jual Tinta? Semua Ada di Sini!</h2>
-  <h5 class="text-xl">Dapatkan tinta baru berkualitas & jual tinta bekas Anda dengan mudah. Kami siap antar & jemput ke seluruh Indonesia.</h5>
+<div class="flex flex-col items-center justify-center p-4 pt-20 text-center text-white bg-primary md:p-16 md:pt-40">
+  <h2 class="text-2xl font-bold md:text-4xl">Beli atau Jual Tinta? Semua Ada di Sini!</h2>
+  <p class="text-md md:text-xl">Dapatkan tinta baru berkualitas & jual tinta bekas Anda dengan mudah. Kami siap antar & jemput ke seluruh Indonesia.</p>
 
-  <Image src="/tinta-hero.png" alt="tinta" width={600} height={500} class="hover:scale-105 transition-all"/>
+  <Image src="/tinta-hero.png" alt="tinta" width={600} height={500}
+  loading="lazy" format="webp"  class="transition-all hover:scale-105"/>
   <div class="flex gap-4">
-    <button class="p-4 bg-white rounded-xl text-blue-800 font-semibold cursor-pointer">Lihat Produk</button>
-    <button class="p-4 border rounded-xl font-semibold cursor-pointer">Hubungi Kami</button>
+    <button class="p-2 text-sm font-semibold text-blue-800 bg-white cursor-pointer md:p-4 rounded-xl">Lihat Produk</button>
+    <button class="p-2 text-sm font-semibold border cursor-pointer md:p-4 rounded-xl">Hubungi Kami</button>
   </div>
 </div>

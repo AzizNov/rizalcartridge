@@ -2,12 +2,12 @@
 import { Image } from "astro:assets"
 ---
 
-<div id="tentang-kami" class="p-8 container mx-auto scroll-mt-20">
-  <h3 class="text-3xl font-semibold text-center">Tentang Kami</h3>
-  <div class="flex items-center gap-12">
-    <Image src="/image-about.png" alt="image-about" width={600} height={600}/>
-    <div class="text-justify space-y-2">
-      <h3 class="text-xl font-semibold mb-2">RizalCartridge - Original Ink Computer</h3>
+<div id="tentang-kami" class="container p-4 mx-auto lg:p-8 scroll-mt-10 md:scroll-mt-20">
+  <h3 class="text-2xl font-semibold text-center lg:text-3xl">Tentang Kami</h3>
+  <div class="flex flex-col items-center -mt-8 lg:flex-row lg:gap-12">
+    <Image src="/image-about.png" alt="image-about" width={600} height={600} class="scale-75 lg:scale-100"/>
+    <div class="space-y-2 text-justify -mt-9">
+      <h3 class="mb-2 text-xl font-semibold text-left">RizalCartridge - Original Ink Computer</h3>
       <p>Lancar Jaya Cartridge adalah solusi terpercaya untuk kebutuhan tinta printer Anda, baik baru maupun bekas. Sejak berdiri, kami berkomitmen menghadirkan produk berkualitas tinggi dengan harga yang kompetitif untuk semua kalangan — mulai dari pengguna rumahan hingga perusahaan besar.
       </p>
       <p>

@@ -52,19 +52,19 @@ const products = [
 ]
 ---
 
-<div class="container mx-auto p-16">
-  <h3 class="text-xl font-semibold text-center mb-8">Product Unggulan Kami</h3>
-  <div class="grid grid-cols-4 gap-12">
+<div class="container p-2 mx-auto lg:p-16">
+  <h3 class="mb-8 text-xl font-semibold text-center">Product Unggulan Kami</h3>
+  <div class="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-12">
     {products.map(product => (
-      <div class="shadow-md p-4 flex flex-col justify-center items-center rounded-lg gap-4">
+      <div class="flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-md">
         <Image src={product.imageUrl} alt={product.name} width={100} height={100} class="h-40 w-fit hover:scale-105"/>
-        <p class="text-lg font-semibold">{product.name}</p>
+        <p class="font-semibold text-center text-md lg:text-lg line-clamp-1">{product.name}</p>
         <p>{product.price}</p>
-        <button class="p-2 px-4 bg-blue-600 hover:bg-blue-900 text-white rounded-xl cursor-pointer">
           <a href="https://wa.me/089600000000" target="_blank">
-          Beli Sekarang
+            <button class="p-2 px-4 text-sm text-white bg-blue-600 cursor-pointer hover:bg-blue-900 rounded-xl">
+            Beli Sekarang
+            </button>
           </a>
-        </button>
       </div>
     ))}
   </div>
