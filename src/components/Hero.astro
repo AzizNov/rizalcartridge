@@ -2,14 +2,18 @@
 import Image from "astro/components/Image.astro"
 ---
 
-<div class="flex flex-col items-center justify-center p-4 pt-20 text-center text-white bg-primary md:p-16 md:pt-40">
-  <h2 class="text-2xl font-bold md:text-4xl">Beli atau Jual Tinta? Semua Ada di Sini!</h2>
-  <p class="text-md md:text-xl">Dapatkan tinta baru berkualitas & jual tinta bekas Anda dengan mudah. Kami siap antar & jemput ke seluruh Indonesia.</p>
+<div class="flex flex-col items-center justify-center p-4 py-20 text-center text-white bg-primary md:p-16 md:pt-40">
+  <h1 class="text-3xl font-semibold md:text-4xl">Beli atau Jual Tinta? Semua Ada di Sini!</h1>
+  <p class="text-xl md:text-xl mt-4">Dapatkan tinta baru berkualitas & jual tinta bekas Anda dengan mudah. Kami siap antar & jemput ke seluruh Indonesia.</p>
 
   <Image src="/tinta-hero.png" alt="tinta" width={600} height={500}
   loading="lazy" format="webp"  class="transition-all hover:scale-105"/>
-  <div class="flex gap-4">
-    <button class="p-2 text-sm font-semibold text-blue-800 bg-white cursor-pointer md:p-4 rounded-xl">Lihat Produk</button>
-    <button class="p-2 text-sm font-semibold border cursor-pointer md:p-4 rounded-xl">Hubungi Kami</button>
+  <div class="flex flex-col md:flex-row gap-4 w-full">
+    <a href="#produk">
+      <button class="p-2 text-sm font-semibold text-blue-800 bg-white cursor-pointer md:p-4 rounded-xl w-full">Lihat Produk</button>
+    </a>
+    <a href="https://wa.me/6283807201787" target="_blank">
+      <button class="p-2 text-sm font-semibold border cursor-pointer md:p-4 rounded-xl w-full">Hubungi Kami</button>
+    </a>
   </div>
 </div>
