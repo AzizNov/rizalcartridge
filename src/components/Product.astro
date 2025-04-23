@@ -1,45 +1,12 @@
 ---
+import ProductBrand from "./ProductBrand.astro";
 import ProductList from "./ProductList.astro";
-import { Image } from "astro:assets";
-
-const brands = [
-  {
-    id: 1,
-    merk: "Canon",
-    imageUrl: "/merk/merk-canon.png"
-  },
-  {
-    id: 2,
-    merk: "Epson",
-    imageUrl: "/merk/merk-epson.png"
-  },
-  {
-    id: 3,
-    merk: "Samsung",
-    imageUrl: "/merk/merk-samsung.png"
-  },
-  {
-    id: 4,
-    merk: "Xerox",
-    imageUrl: "/merk/merk-xerox.png"
-  },
-  {
-    id: 5,
-    merk: "Brother",
-    imageUrl: "/merk/merk-brother.png"
-  },
-  ]
 ---
 
-<div id="produk" class="space-y-4 scroll-mt-20">
-  <div class="text-center space-y-4">
-    <h3 class="font-semibold text-3xl">Produk Kami</h3>
+<div id="produk" class="p-4 space-y-4 scroll-mt-10 md:scroll-mt-24">
+  <div class="space-y-4 text-center">
+    <h3 class="text-2xl font-semibold md:text-3xl">Produk Kami</h3>
     <p>Kami menyediakan berbagai macam tinta printer untuk semua merek printer terkenal dengan kualitas terjamin.</p>
-  </div>
-  <div class="flex gap-16 justify-center">
-    {brands.map(brand => (
-      <Image src={brand.imageUrl} alt={brand.merk} width={100} height={50} class="h-fit grayscale-100 hover:grayscale-0 cursor-pointer"/>
-    ))}
-  </div>
+  <ProductBrand/>
   <ProductList />
 </div>
