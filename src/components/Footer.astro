@@ -1,3 +1,7 @@
+---
+import { Icon } from "astro-icon/components"
+---
+
 <div id="kontak">
   <div class="container grid gap-4 p-8 mx-auto text-white lg:grid-cols-3 grid-col-1 lg:gap-16">
     <div >
@@ -14,10 +18,18 @@
     </div>
     <div>
       <h3 class="font-semibold text lg lg:mb-4">Informasi Kontak</h3>
-      <p>Jl. Pemancingan 1 Srengseng 11630 Kembangan Jakarta Barat</p>
-      <p>0812-1855-166</p>
-      <p>0857-1767-3878</p>
-      <p>0812-9477-9609</p>
+      <div class="flex gap-1">
+        <Icon name="ic:baseline-place" class="w-8"/>
+        <a href="https://maps.app.goo.gl/9dtKfF3R55WF69Xm7" target="_blank" >
+          Jl. Sunan Kalijaga No.110, Larangan Indah, Kec. Larangan, Kota Tangerang, Banten 15154
+        </a>
+      </div>
+      <div  class="flex gap-1 items-center">
+        <Icon name="ic:baseline-whatsapp" />
+        <a href="https://wa.me/62818606659" target="_blank">
+          +62 818 606 659
+        </a>
+      </div>
     </div>
   </div>
   <div class="p-2 bg-blue-950">
