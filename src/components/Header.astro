@@ -29,6 +29,8 @@ import { Image } from "astro:assets"
 <script>
   const btnMenu = document.getElementById('btn-menu')!;
   const menuList = document.getElementById('menu')!;
+  const header = document.getElementById('header')!;
+  const links = menuList.querySelectorAll('a');
 
   btnMenu.addEventListener('click', () => {
     menuList.classList.toggle('hidden')
@@ -45,11 +47,12 @@ import { Image } from "astro:assets"
   window.addEventListener('scroll', () => {
     menuList.classList.add('hidden')
 
-    const header = document.getElementById('header')!;
     if (window.scrollY > 50) {
       header.classList.replace('bg-transparent','bg-primary');
+      links.forEach(link => link.classList.remove('drop-shadow-text'))
     } else {
       header.classList.replace('bg-primary', 'bg-transparent');
+      links.forEach(link => link.classList.add('drop-shadow-text'))
     }
   });
 </script>
