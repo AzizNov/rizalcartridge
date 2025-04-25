@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@iconify-json/arcticons':
+        specifier: ^1.2.23
+        version: 1.2.23
       '@iconify-json/ic':
         specifier: ^1.2.2
         version: 1.2.2
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.33
+        version: 1.2.33
       '@tailwindcss/vite':
         specifier: ^4.1.4
         version: 4.1.4(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2))
@@ -222,8 +228,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@iconify-json/arcticons@1.2.23':
+    resolution: {integrity: sha512-j7VE1opFBApOxZeEcrSKhIgpUa6GHesuUgIBoWOoyRaslMqIKZh8ob7KGKRiZyB+R6+rxbEo3/6l7GBl7Ls7jw==}
+
   '@iconify-json/ic@1.2.2':
     resolution: {integrity: sha512-QmjwS3lYiOmVWgTCEOTFyGODaR/+689+ajep/VsrCcsUN0Gdle5PmIcibDsdmRyrOsW/E77G41UUijdbjQUofw==}
+
+  '@iconify-json/simple-icons@1.2.33':
+    resolution: {integrity: sha512-nL5/UmI9x5PQ/AHv6bOaL2pH6twEdEz4pI89efB/K7HFn5etQnxMtGx9DFlOg/sRA2/yFpX8KXvc95CSDv5bJA==}
 
   '@iconify/tools@4.1.2':
     resolution: {integrity: sha512-q6NzLQYEN9zkDfcyBqD3vItHcZw97w/s++3H3TBxUORr57EfHxj6tOW6fyufDjMq+Vl56WXWaPx1csBPYlI5CA==}
@@ -2111,7 +2123,15 @@ snapshots:
   '@esbuild/win32-x64@0.25.2':
     optional: true
 
+  '@iconify-json/arcticons@1.2.23':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/ic@1.2.2':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.2.33':
     dependencies:
       '@iconify/types': 2.0.0
 
