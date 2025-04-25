@@ -1,38 +1,71 @@
 ---
 import { Icon } from "astro-icon/components"
----
+import { Image } from "astro:assets"
 
-<div id="kontak">
-  <div class="container grid gap-4 p-8 mx-auto text-white lg:grid-cols-3 grid-col-1 lg:gap-16">
-    <div >
-      <p class="mt-2 text-justify"><span class="font-semibold">Rizal Cartridge</span> Bergerak Dibidang tinta toner dan cartridge. Kami melayani segala macam jual beli tinta toner dan cartridge baru dan bekas di seluruh indonesia, melayani lelangang kantor, Berani Bayar Dengan Harga Tinggi</p>
-    </div>
-    <div class="flex flex-col gap-2 lg:items-center">
-      <h3 class="text-lg font-semibold lg:mb-2">Tautan Cepat</h3>
-      <ul>
-        <li><a href="#beranda">&gt; Beranda</a></li>
-        <li><a href="#tentang-kami">&gt; Tentang Kami</a></li>
-        <li><a href="#produk">&gt; Produk</a></li>
-        <li><a href="#kontak">&gt; Kontak</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="font-semibold text lg lg:mb-4">Informasi Kontak</h3>
-      <div class="flex gap-1">
-        <Icon name="ic:baseline-place" class="w-8"/>
-        <a href="https://maps.app.goo.gl/9dtKfF3R55WF69Xm7" target="_blank" >
-          Jl. Sunan Kalijaga No.110, Larangan Indah, Kec. Larangan, Kota Tangerang, Banten 15154
-        </a>
+const message = "Halo, sata tertarik dengan produk anda";
+---
+<footer class="bg-primary">
+  <div id="kontak">
+    <div class="container grid gap-4 p-8 mx-auto text-white lg:grid-cols-3 grid-col-1 lg:gap-16">
+      <div >
+        <div class="flex">
+          <Image src="/logo.png" alt="logo" width={40} height={25}/>
+          <p class="text-2xl font-semibold">Rizal Cartridge</p>
+        </div>
+        <p class="mt-2 text-justify"><span class="font-semibold">Rizal Cartridge</span> Bergerak Dibidang tinta toner dan cartridge. Kami melayani segala macam jual beli tinta toner dan cartridge baru dan bekas di seluruh indonesia, melayani lelangang kantor, Berani Bayar Dengan Harga Tinggi</p>
       </div>
-      <div  class="flex gap-1 items-center">
-        <Icon name="ic:baseline-whatsapp" />
-        <a href="https://wa.me/62818606659" target="_blank">
-          +62 818 606 659
-        </a>
+      <div class="flex flex-col gap-2 lg:items-center">
+        <p class="text-lg font-semibold lg:mb-2">Tautan Cepat</p>
+        <ul>
+          <li><a href="#beranda">&gt; Beranda</a></li>
+          <li><a href="#tentang-kami">&gt; Tentang Kami</a></li>
+          <li><a href="#produk">&gt; Produk</a></li>
+          <li><a href="#kontak">&gt; Kontak</a></li>
+        </ul>
       </div>
+      <div class="flex flex-col gap-4">
+        <div>
+          <p class="font-semibold text lg lg:mb-4">Informasi Kontak</p>
+          <div class="flex gap-1 items-start">
+            <Icon name="ic:baseline-place" size={40} />
+            <a href="https://maps.app.goo.gl/9dtKfF3R55WF69Xm7" target="_blank" >
+              Jl. Sunan Kalijaga No.110, Larangan Indah, Kec. Larangan, Kota Tangerang, Banten 15154
+            </a>
+          </div>
+          <div  class="flex gap-1 items-center">
+            <Icon name="ic:baseline-whatsapp" size={22}/>
+            <a href=`https://wa.me/62818606659?text=${message}` target="_blank">
+              0818 606 659
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <p class="font-semibold">Ikuti Kami</p>
+          <div class="flex gap-4">
+            <div class="flex flex-col gap-1 items-center text-sm">
+              <a href="https://www.facebook.com/share/1AUe3k8egh">
+                <Icon name="simple-icons:facebook" size={30}/>
+              </a>
+              <p>Facebook</p>
+            </div>
+            <div class="flex flex-col gap-1 items-center text-sm">
+              <a href="https://www.tiktok.com/@kelvinrizal6">
+                <Icon name="simple-icons:tiktok" size={30}/>
+              </a>
+              <p>Tiktok</p>
+            </div>
+            <div class="flex flex-col gap-1 items-center text-sm">
+              <a href="https://www.tokopedia.com/anekatintaprinter">
+                <Icon name="arcticons:tokopedia" size={32}/>
+              </a>
+              <p>Tokopedia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-2 bg-accent">
+      <p class="text-center text-white">&copy;2025 Rizal cartridge</p>
     </div>
   </div>
-  <div class="p-2 bg-blue-950">
-    <p class="text-center text-white">&copy;2025 Rizal cartridge</p>
-  </div>
-</div>
+</footer>
