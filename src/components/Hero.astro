@@ -1,19 +1,18 @@
----
-import Image from "astro/components/Image.astro"
----
-
-<div class="flex flex-col items-center justify-center p-4 pt-18 text-center text-white bg-primary md:p-16 md:pt-40 h-dvh md:h-auto">
-  <h1 class="text-3xl font-semibold md:text-4xl">Beli atau Jual Tinta? Semua Ada di Sini!</h1>
-  <p class="text-xl md:text-xl mt-4">Dapatkan tinta baru berkualitas & jual tinta bekas Anda dengan mudah. Kami siap antar & jemput ke seluruh Indonesia.</p>
-
-  <Image src="/tinta-hero.png" alt="tinta" width={600} height={500}
-  loading="lazy" format="webp"  class="transition-all hover:scale-105"/>
-  <div class="flex flex-col md:flex-row gap-4 w-full md:justify-center">
-    <a href="#produk">
-      <button class="p-2 text-sm font-semibold text-blue-800 bg-white cursor-pointer md:p-4 rounded-xl w-full">Lihat Produk</button>
-    </a>
-    <a href="https://wa.me/62818606659" target="_blank">
-      <button class="p-2 text-sm font-semibold border cursor-pointer md:p-4 rounded-xl w-full">Hubungi Kami</button>
-    </a>
+<div class="bg-[url(/hero_section_image.webp)] bg-no-repeat bg-cover bg-center">
+  <div class="flex flex-col items-center justify-center p-4 pt-18 text-center text-white md:p-24 md:pt-40 h-dvh md:h-auto">
+    <h1 class="text-3xl font-semibold md:text-6xl md:w-5xl drop-shadow-text mb-4">Beli Tinta Printer Berkualitas, Harga Lebih Efisien</h1>
+    <div class="relative">
+      <div class="bg-accent/50 blur-xl  absolute w-full h-full"></div>
+      <p class="text-xl md:text-2xl md:w-2xl drop-shadow-text blur-none">Menyediakan tinta printer berkualitas untuk kebutuhan pribadi dan bisnis, kualitas terjamin, performa optimal dan harga terjangkau.</p>
+    </div>
+  
+    <div class="flex flex-col md:flex-row gap-4 w-full md:justify-center mt-8">
+      <a href="#produk">
+        <button class="p-2 text-md md:text-lg font-semibold text-black bg-white drop-shadow-text cursor-pointer md:p-4 rounded-xl w-full">Lihat Produk</button>
+      </a>
+      <a href="https://wa.me/62818606659" target="_blank">
+        <button class="p-2 text-md md:text-lg font-semibold bg-primary drop-shadow-text cursor-pointer md:p-4 rounded-xl w-full">Hubungi Kami</button>
+      </a>
+    </div>
   </div>
 </div>
