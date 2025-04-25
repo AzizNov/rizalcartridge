@@ -11,12 +11,14 @@ import Maps from '../components/Maps.astro';
 ---
 
 <Layout>
-	<Header slot="header"/>
-	<Hero />
-	<About/>
-	<Product />
-	<Cta/>
-	<Faq />
-	<Maps />
-	<Footer slot="footer"/>
+	<Header/>
+	<main id="beranda" class="bg-secondary">
+		<Hero />
+		<About/>
+		<Product />
+		<Cta/>
+		<Faq />
+		<Maps />
+	</main>
+	<Footer/>
 </Layout>

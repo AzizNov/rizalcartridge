@@ -10,15 +10,7 @@ import "../styles/global.css"
 		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 		<title>Rizal Cartridge</title>
 	</head>
-	<body class="font-poppins">
-		<header class="fixed top-0 left-0 right-0 z-50 flex p-2 shadow-lg bg-primary">
-			<slot name="header"/>
-		</header>
-		<main id="beranda">
-			<slot />
-		</main>
-		<footer class="bg-primary">
-			<slot name="footer" />
-		</footer>
+	<body class="font-inter">
+		<slot />
 	</body>
 </html>
