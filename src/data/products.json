@@ -1,50 +1,62 @@
 [
   {
     "id": 1,
-    "name": "Tinta Canon 745/746",
-    "price": "Rp. 150.000,-",
-    "imageUrl": "/products/tinta-canon-745.jpg"
+    "name": "HP 76A Original LaserJet",
+    "imageUrl": "/products/laserjet-871.avif"
   },
   {
     "id": 2,
-    "name": "Tinta Brother 5000",
-    "price": "Rp. 50.000,-",
-    "imageUrl": "/products/tinta-brother-5000.png"
+    "name": "HP 87A Original LaserJet",
+    "imageUrl": "/products/laserjet-76a.avif"
   },
   {
     "id": 3,
-    "name": "Tinta Epson 664",
-    "price": "Rp. 50.000,-",
-    "imageUrl": "/products/tinta-epson-664.png"
+    "name": "HP 147A Original LaserJet",
+    "imageUrl": "/products/hp-laserjet-147a.avif"
   },
   {
     "id": 4,
-    "name": "Tinta Brother LC563",
-    "price": "Rp. 50.000,-",
-    "imageUrl": "/products/tinta-brother-lc563.png"
+    "name": "HP 680 Original Ink Advantage Cartridge",
+    "imageUrl": "/products/hp-680.webp"
   },
   {
     "id": 5,
-    "name": "Cartridge Canon 810",
-    "price": "Rp. 170.000,-",
-    "imageUrl": "/products/cartridge-canon-810.jpg"
+    "name": "HP 682 Original Ink Advantage Cartridge",
+    "imageUrl": "/products/hp-682.webp"
   },
   {
     "id": 6,
-    "name": "Cartridge Hp 802",
-    "price": "Rp. 60.000,-",
-    "imageUrl": "/products/cartridge-hp-802.png"
+    "name": "HP 802 Original Ink Advantage Cartridge",
+    "imageUrl": "/products/hp-802.webp"
   },
   {
     "id": 7,
-    "name": "Toner Puji Xerox 315",
-    "price": "Rp. 400.000,-",
-    "imageUrl": "/products/toner-puji-xerox.png"
+    "name": "HP 803 Original Ink Advantage Cartridge",
+    "imageUrl": "/products/hp-803.webp"
   },
   {
     "id": 8,
-    "name": "Tinta Epson 003",
-    "price": "Rp. 85.000,-",
-    "imageUrl": "/products/tinta-epson-003.png"
+    "name": "HP 955 Original Ink Advantage Cartridge",
+    "imageUrl": "/products/hp-955.webp"
+  },
+  {
+    "id": 9,
+    "name": "HP GT52 Original Ink Advantage Cartridge",
+    "imageUrl": "/products/hp-gt52.webp"
+  },
+  {
+    "id": 10,
+    "name": "Canon 810 Original Ink",
+    "imageUrl": "/products/cartridge-canon-810.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Brother 5000 Original Ink",
+    "imageUrl": "/products/tinta-brother-5000.png"
+  },
+  {
+    "id": 12,
+    "name": "Brother 563 Original Ink",
+    "imageUrl": "/products/tinta-brother-lc563.png"
   }
 ]
